@@ -1,0 +1,40 @@
+.radio {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radioInner {
+  width: 11px;
+  height: 11px;
+  transition: 0.2s;
+  border-radius: 50%;
+  transform: scale(0);
+  transition-timing-function: cubic-bezier(0.86, 0.26, 0.46, 0.89);
+}
+
+.overlay {
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  bottom: -7px;
+  right: -7px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.activeElement {
+  transform: scale(1);
+}
+
+@media (hover: hover) {
+  .radio:hover .overlay {
+    opacity: 0.2;
+  }
+}
