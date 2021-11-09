@@ -1,4 +1,4 @@
-1) Чекбокс
+﻿1) Чекбокс
 
 const [checkboxActive, setCheckboxActive] = useState<boolean>(false)
 
@@ -33,4 +33,6 @@ const [activeRadio, setActiveRadio] = useState<string | number>(1)
         color='#E0486C'             // необязательный параметр
     />
 </div>
+
+3) Dropdown
 
